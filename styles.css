@@ -1,0 +1,241 @@
+/* BODY, MAIN WRAP AND MASTHEAD STYLES */
+
+* { 
+       margin: 0;
+       padding: 0; }
+
+body {
+       color: #FFFFFF;
+	   background-image: url(assets/back.gif); 
+	   background-color: #000000;
+	   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	   font-size: 0.7em;
+	   cursor:default; }
+	   
+	   
+#wrapper_in {
+	width: 596px;
+	height: 593px;
+	border: 1px solid #333333;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto; }
+	   
+#masthead {
+	   height: 140px;
+	   width: 596px;  
+	   background-image: url(assets/masthead.jpg);
+	   background-color: #000000;
+	   background-repeat: no-repeat; 
+	   clear: both;}
+
+
+
+/* LINKS STYLES */
+	   
+a {
+       text-decoration: underline;
+	   color: #CCCCCC; }
+	   
+a:visited {
+       color: #999999; }
+	   
+a:hover {
+       text-decoration:none; }	   
+
+
+
+/* HEADINGS STYLES */
+	   
+h1 {color: #990000;
+       font-size: 1.3em; }
+
+h2 {color: #CCCCCC; 
+       font-size: 1.0em;}
+	   
+
+
+/* STYLES FOR NAVIGATION MENU */
+	   
+#navigation {
+       font: bold 12px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	   text-transform: uppercase; 
+	   background-image: url(assets/nav_back1_new.jpg); 
+	   background-repeat: no-repeat;
+	   height:28px;
+	   width: 596px;
+	   }
+
+#navigation ul {
+       list-style-type:none;
+	   float:left;
+	   margin-left: 0px;
+       }
+  
+#navigation a {
+	color:#CCCCCC;
+	   }  
+	   
+#navigation a:hover {
+	color: #990000;
+	   }   
+ 	 
+
+#dmenu li {
+	   display: inline;
+	   position: relative; 
+	   padding-left:10px;
+	   padding-right:10px;
+	   line-height: 28px; 
+       }
+	   
+#dmenu li a {
+	   text-decoration: none;
+	   color: #CCCCCC;
+	   }
+	   
+
+
+#dmenu li a:hover {
+       text-decoration: underline;
+	   }
+	
+
+#dmenu li li {
+	   display: block;
+	   width: 120px;
+	   padding: 0;
+	   }
+	   
+	   
+#dmenu li ul {
+       text-align: left;
+	   font-size: 9px;
+	   text-decoration:none;
+	   text-transform: none;
+	   margin: 0;
+	   background-color: #000000;
+	   display: none;
+	   position: absolute;
+	   left: 5px;
+	   top: 13px;
+	   z-index: 10;
+	   width: 120px;
+	   }
+	   
+#dmenu .smallerText {
+       font-size: 11px;
+	   font-weight: bold;
+	   padding-left: 3px;
+	   background: #333333;
+	   width: 120px;
+	   text-transform:none;
+	   }
+	   
+#dmenu #navListOne {
+       position: absolute;
+	   margin-left: 0px;
+	   }
+	   
+#dmenu #navListTwo {
+       position:absolute;
+	   margin-left: 120px;
+	   border-left: 0px;
+	   }
+	   
+#dmenu #navListThree {
+       position: absolute;
+	   margin-left: 240px;
+	   border-left: 0px;
+	   }
+	   
+#dmenu ul li a{
+       background-color: #000000;
+	   color: #dddddd;
+	   padding-left: 5px;
+	   }
+	   
+#dmenu li:hover ul, #dmenu li.over ul{
+       display: block;
+	   }
+	   
+
+		   
+
+/* MAIN CONTENT AND SIDEBAR STYLES */	   
+	   
+	   
+#content {
+       background-image: url(assets/nav_back_new.jpg);
+	   background-repeat:repeat-x;
+	   height: 405px; 
+	   width: 596px;
+	   clear:both; }
+
+#sidebar {
+       float: left;
+	   width: 130px;
+	   height: 380px;
+	   text-align:justify;
+	   color: #CCCCCC; 
+	   padding-left: 13px;
+	   padding-right: 13px;
+	   padding-top: 20px;
+	   overflow: auto;
+	   font-size: 0.9em; }
+
+#mainContent {
+       float: left;
+	   height: 360px;
+	   width: 400px;
+	   padding: 10px;
+	   padding-left: 20px;
+	   margin-top: 20px;
+	   overflow: auto;
+	   border-left: solid 1px;
+	   border-color: black; }
+	   
+#mainContent1 {
+       float: left;
+	   height: 350px;
+	   width: 556px;
+	   padding: 10px;
+	   padding-left: 20px;
+	   margin-top: 20px;
+	   overflow: auto; }
+
+
+
+/* STYLES FOR 'RECOMMENDED' SECTION */
+	   
+#pics {
+      margin-top: 30px; }
+
+#pics ul {
+       list-style: none; }
+	   
+#pics li {
+       display:inline;
+	   float: left; }
+	   
+#pics li a { 
+       display: block;
+	   margin: 10px;
+	   border: solid 1px #999999; 
+	   text-decoration: none;}
+	   
+	   
+	   
+/* FOOTER STYLES */
+              
+#footer {
+       font-family: "Georgia", "Times New Roman", Times, serif;
+	   text-align: center; 
+	   vertical-align: middle;
+	   color: #999999;
+	   font-size: 0.9em; 
+	   margin: 0px;
+	   height: 20px;
+	   background-color:#000000 ;
+	   line-height:20px;}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonication Records Map</title>
+
+<style type="text/css">
+<!--
+* {
+	margin: 0px;
+	padding: 0px;
+}
+-->
+</style>
+
+<!-- Google Maps code starts here-->
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAPlFiGoKj-n0qyilRpqNRuRQPbZWX3oDL49-f4wqKW6ybV8lV8xSwBg7LzkJobOOf6FTJ56iLlFHEmg"
+      type="text/javascript"></script>
+    
+    <script type="text/javascript">
+
+    //<![CDATA[
+
+    function load() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        
+        map.addControl(new GSmallMapControl());
+        map.addControl(new GMapTypeControl());
+        
+        map.setCenter(new GLatLng(52.920357, -1.404677), 11);
+        var point = new GLatLng(52.920357, -1.404677);
+        map.addOverlay(new GMarker(point));
+        map.openInfoWindowHtml(point,"<br>DEMONICATION RECORDS<br>Your underground metal shop is here!");
+      }
+    }
+
+    //]]>
+    </script>
+<!-- Google Maps code ends here-->
+
+</head>
+
+<body onload="load()" onunload="GUnload()">
+<div id="map" style="width: 450px; height:350px; font-family:'Trebuchet MS','Arial', sans serif; color:#666666; font-size:10px"></div>
+</body>
+</html>

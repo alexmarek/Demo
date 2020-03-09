@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonication Records</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="pwd33.js" type="text/javascript"></script>
+
+<style type="text/css">
+
+<!--
+
+p {
+     margin-left: 20px; }
+
+table {
+     width: 350px;
+     margin-left: 15px;
+		}
+
+td {
+       padding: 6px; 
+	   text-align: left; }
+	   
+#form1 {
+       width: 350px; 
+	   background-color: #000000;}
+        
+
+#form
+    {
+        margin-left:20px;
+        }
+
+#map {
+     width: 250px;
+	 height: 130px;
+	 color: #000000;
+     }
+
+-->
+
+</style>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+
+function ucit(fld)
+	{
+	
+	// This function changes letter characters to uppercase.
+	
+	fld.value = fld.value.toUpperCase();
+	}
+
+function trim(fld)   
+	{ 
+	
+	// This function trims off leading and trailing spaces from strings
+	  
+	var str = fld.value     
+	while (str.substr(0,1) == " " || str.substr(str.length - 1) == " ")       
+		{       
+		if (str.substr(0,1) == " ")         
+			{         
+			str = str.substr(1)         
+			}       
+		else         
+			{         
+			str = str.substr(0, str.length - 1)         
+			}
+		}
+		fld.value = str
+	}
+
+
+function fieldcheck(fld)
+   {
+   fld.valid = false;
+   
+   switch (fld.name)
+      {
+	  //This expression prevents user from entering more than two names
+	  case "firstName":
+	  var firstNameRegExp = /^[A-Z]+[A-Z]/i 
+	    if(firstNameRegExp.test(fld.value) == true)
+		  {
+		  fld.valid = true
+		  }
+	  break;
+	  
+      //This criteria prevents a user from entering an email address in a wrong format, missing out the essential "@" character and a full-stop.
+	  case "email":
+	  var emailRegExp = /[^\s]+\@[^\s]+\.[^\s]+/i
+	    if(emailRegExp.test(fld.value) == true)
+		  {
+		  fld.valid = true;
+		  }
+	  break;
+	  
+	  case "chk_hidden":
+	  case "generic_hidden":
+		if (fld.value != 0)
+			{
+			fld.valid = true;
+			}
+	  break;
+   }   
+}
+
+function validate(frm)
+  {
+  for (i = 0; i < frm.length - 1; i++)
+      {
+      fieldcheck(frm.elements[i])
+      }
+  }
+  
+function runreport(frm)
+	{
+	report_textheader = "================================\n\n"
+
+report_text = ""
+
+if (frm.firstName.valid == false)
+{
+report_text += "    Please enter your name.\n\n"
+}
+
+if (frm.email.valid == false)
+{
+report_text += "    Please enter your email address. The e-mail address must contain a snail and a full-stop.\n\n"
+}
+if (frm.chk_hidden.valid == false)
+{
+report_text += "    Please tick at least one of the favourite music style checkboxes.\n\n"
+}
+report_footer = "================================\n"
+
+if (report_text == "")
+{
+report_text = "All your data entries are correct.\n\n"
+}
+
+alert(report_textheader + report_text + report_footer);
+	}
+
+</script>
+
+
+   
+</head>
+
+<body onload="load()" onunload="GUnload()">
+   <div id="wrapper_in">
+       <div id="masthead">
+       </div> 
+			<div id="navigation">
+            <ul id="dmenu">
+			     <li><a href="index.html">Home</a></li>
+<li><a href="sale.html">Shop</a>
+                    <ul id="navListOne">
+                          <li class="smallerText"><strong>A-F</strong></li>
+                          <li><a href="sale.html#deathHuman">Death</a></li>
+                          <li><a href="sale.html#deathIndividual">Death</a></li>
+                          <li><a href="sale.html#deathSymbolic">Death</a></li>
+                          <li><a href="sale.html#emperorNightside">Emperor</a></li>
+                          <li><a href="sale.html#emperorIX">Emperor</a></li>
+                    </ul>
+                    <ul id="navListTwo">
+                       <li class="smallerText"><strong>G-K</strong></li>
+                          <li><a href="sale.html#gorgutsObscura">Gorguts</a></li>
+                          <li><a href="sale.html#immolationDawn">Immolation</a></li>
+                          <li><a href="sale.html#immolationClose">Immolation</a></li>
+                          <li><a href="sale.html#immolationUnholy">Immolation</a></li>
+                          <li><a href="sale.html#kreatorComa">Kreator</a></li>
+                   </ul>
+                     <ul id="navListThree">
+                     <li class="smallerText"><strong>L-Z</strong></li>
+                          <li><a href="sale.html#morbidangelCovenant">Morbid Angel</a></li>
+                          <li><a href="sale.html#morbidangelGateways">Morbid Angel</a></li>
+                          <li><a href="sale.html#morbidangelHeretic">Morbid Angel</a></li>
+                          <li><a href="sale.html#sodomAgent">Sodom</a></li>
+                          <li><a href="sale.html">Others...</a></li>
+                   </ul>
+      </li>
+			  <li><a href="wanted.html">Wanted</a></li>
+              <li><a href="links.html">Links</a></li>
+			  <li><a href="contacts.html">Contacts</a></li>
+	     </ul>
+            </div> 
+     <div id="content">
+	<div id="mainContent1">
+	   <div id="address">
+             <h1>ADDRESS</h1><br>
+             <p>Demonication Records<br> 
+			 15 Sitwell Street<br> 
+			 DE21 7SS, Derby<br> 
+			 UNITED KINGDOM,  <span onClick="window.open('googlemapstest.html','mywindow','width=450,height=350,left=100,top=100')" style="text-decoration:underline; color:#CCCCCC; cursor:pointer">Click for map.</span><br><br>
+			 
+                e-mail: <a href="mailto:alesmarek5@googlemail.com">Demonication Records</a><br>
+				web: <a href="http://www.infinityseeker.net/nitlc">www.demonication.com</a><br>
+				            
+              </p> <br> <br>
+                
+            </div>
+			<div id="contactform">
+                <h1>CONTACT FORM</h1>
+                   <form action="mailto:alesmarek5@googlemail.com?subject=JavaScript Assignment" method="post"  enctype="text/plain" name="myform" onSubmit="validate(this); post">
+     <table> 
+	     <tr>
+		    <td>Name: <input type="text" size="22" name="firstName" onBlur="trim(this);"></td>
+                    <td>E-mail: <input type="text" size="20" value="@" name="email" onBlur="trim(this);"></td>
+		</tr>
+         <tr>
+         <td>Comments:<br> <TEXTAREA NAME=Comments ROWS=3 COLS=20></TEXTAREA></td>
+         <td id="check">My favourite music style is:<br>
+             <input name="DeathMetal" id="DeathMetal" type="checkbox"  value="yes" onChange="this.checked == true ? chk_hidden.value = parseInt(chk_hidden.value)+1 : chk_hidden.value = parseInt(chk_hidden.value)-1">&nbsp;Death Metal<br>
+	     <input name="ThrashMetal" type="checkbox" id="ThrashMetal"  value="yes" onChange="this.checked == true ? chk_hidden.value = parseInt(chk_hidden.value)+1 : chk_hidden.value = parseInt(chk_hidden.value)-1">&nbsp;Thrash Metal<br>
+	     <input name="BlackMetal" type="checkbox" id="BlackMetal" value="yes" onChange="this.checked == true ? chk_hidden.value = parseInt(chk_hidden.value)+1 : chk_hidden.value = parseInt(chk_hidden.value)-1">&nbsp;Black Metal<br>
+	     <input name="Rock" type="checkbox" id="Rock" value="yes" onChange="this.checked == true ? chk_hidden.value = parseInt(chk_hidden.value)+1 : chk_hidden.value = parseInt(chk_hidden.value)-1">&nbsp;Other<br>
+	     <input type="hidden" name="chk_hidden" value=0></td>
+         </tr>
+	  <tr>
+	        <td colspan="2" id="buttons"><input type="submit" value="Send" name="submit" onClick="mailto:alesmarek5@googlemail.com">
+			                             <input type="button" value="Validate" name="sb" onClick="validate(this.form); runreport(this.form);">
+                                         <input type="reset" value="Reset" name="reset"></td>
+		  </tr>
+	  </table>
+   </form>
+   <br>
+   <br>
+   <p>* The shop is open Mon-Sat 9.00-18.00. <br>
+     ** We aim to reply to all emails and enquiries within 12 hours.</p>
+</div>
+<br>
+<br>
+	      </div>		  
+     </div>
+	   <div id="footer">All rights reserved &copy; <a href="http://www.infinityseeker.net">InfinitySeeker</a> 2010 | W3C Valid <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.infinityseeker.net/demonication" target="blank">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" target="blank">CSS</a></div>   
+   </div>
+</body>
+</html>
